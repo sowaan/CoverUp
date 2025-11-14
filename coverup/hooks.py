@@ -48,6 +48,14 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+
+# top-level of hooks.py
+# doctype_js = {
+#     "Yarn Calculation Sheet": "public/js/yarn_calculation_sheet.js"
+# }
+
+
+
 # Svg Icons
 # ------------------
 # include app icons in desk
