@@ -5,6 +5,14 @@ app_description = "Purchase Order of Yarn Calculation Items"
 app_email = "info@sowaan.com"
 app_license = "mit"
 
+
+doc_events = {
+    # "Fabric Planning": {
+    #     "on_submit": "coverup.cover_up.api.knitted_planning.create_knitted_planning_from_fabric"
+    # }
+}
+
+
 # Apps
 # ------------------
 
