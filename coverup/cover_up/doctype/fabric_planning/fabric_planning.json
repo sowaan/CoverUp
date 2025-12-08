@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-01 16:31:32.402734",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order",
+  "item",
+  "finished_good_item_name",
+  "qty",
+  "weight",
+  "composition",
+  "knit_waste",
+  "net_total_knit_waste",
+  "cut_waste",
+  "net_total_cut_waste",
+  "width",
+  "column_break_lfgo",
+  "fabric_type",
+  "sub_finished_item_code",
+  "sub_finished_item_name",
+  "sub_total",
+  "dye_waste",
+  "net_total_dye_waste",
+  "stitch_waste",
+  "net_total_stitch_waste",
+  "yarn_calculation_sheet",
+  "gsm",
+  "section_break_sein",
+  "short_fall",
+  "grand_total",
+  "column_break_kxcv",
+  "stitch_length",
+  "count",
+  "section_break_xnaj",
+  "final_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Finished Good Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "finished_good_item_name",
+   "fieldtype": "Data",
+   "label": "Finished Good Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "composition",
+   "fieldtype": "Data",
+   "label": "Composition"
+  },
+  {
+   "fieldname": "knit_waste",
+   "fieldtype": "Percent",
+   "label": "Knit Waste"
+  },
+  {
+   "fieldname": "net_total_knit_waste",
+   "fieldtype": "Float",
+   "label": "Net Total(knit waste)"
+  },
+  {
+   "fieldname": "cut_waste",
+   "fieldtype": "Percent",
+   "label": "Cut Waste"
+  },
+  {
+   "fieldname": "net_total_cut_waste",
+   "fieldtype": "Float",
+   "label": "Net Total(cut waste)"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_lfgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fabric_type",
+   "fieldtype": "Link",
+   "label": "Fabric type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "sub_finished_item_code",
+   "fieldtype": "Link",
+   "label": "Sub Finished Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "sub_finished_item_code.item_name",
+   "fieldname": "sub_finished_item_name",
+   "fieldtype": "Data",
+   "label": "Sub Finished Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Float",
+   "label": "Sub Total"
+  },
+  {
+   "fieldname": "dye_waste",
+   "fieldtype": "Percent",
+   "label": "Dye waste"
+  },
+  {
+   "fieldname": "net_total_dye_waste",
+   "fieldtype": "Percent",
+   "label": "Net Total(dye waste)"
+  },
+  {
+   "fieldname": "stitch_waste",
+   "fieldtype": "Percent",
+   "label": "Stitch Waste"
+  },
+  {
+   "fieldname": "net_total_stitch_waste",
+   "fieldtype": "Float",
+   "label": "Net Total(stitch waste)"
+  },
+  {
+   "fieldname": "yarn_calculation_sheet",
+   "fieldtype": "Link",
+   "label": "Yarn Calculation Sheet",
+   "options": "Yarn Calculation Sheet"
+  },
+  {
+   "fieldname": "gsm",
+   "fieldtype": "Float",
+   "label": "GSM"
+  },
+  {
+   "fieldname": "section_break_sein",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "short_fall",
+   "fieldtype": "Percent",
+   "label": "Short Fall"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "column_break_kxcv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stitch_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Stitch length"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Count"
+  },
+  {
+   "fieldname": "section_break_xnaj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_table",
+   "fieldtype": "Table",
+   "label": "FInal Table",
+   "options": "Final Doctype"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fabric Planning",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-08 19:35:42.615729",
+ "modified_by": "Administrator",
+ "module": "Cover Up",
+ "name": "Fabric Planning",
+ "owner": "maaz.hassan@sowaan.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "queue_in_background": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
