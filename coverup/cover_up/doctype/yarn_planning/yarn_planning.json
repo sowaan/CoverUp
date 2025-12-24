@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "sales_order",
+  "customer",
   "item",
   "finished_good_item_name",
   "qty",
@@ -49,7 +50,8 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Finished Good Item Code",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fetch_from": "item.item_name",
@@ -62,7 +64,9 @@
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Quantity"
+   "label": "Quantity",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "weight",
@@ -98,7 +102,9 @@
   {
    "fieldname": "width",
    "fieldtype": "Float",
-   "label": "Width"
+   "label": "Width",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lfgo",
@@ -113,14 +119,15 @@
   {
    "fieldname": "sub_finished_item_code",
    "fieldtype": "Link",
-   "label": "Sub Finished Item Code",
-   "options": "Item"
+   "label": "Kniited Fabric Code",
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fetch_from": "sub_finished_item_code.item_name",
    "fieldname": "sub_finished_item_name",
    "fieldtype": "Data",
-   "label": "Sub Finished Item Name",
+   "label": "Kniited Fabric Name",
    "read_only": 1
   },
   {
@@ -157,7 +164,9 @@
   {
    "fieldname": "gsm",
    "fieldtype": "Float",
-   "label": "GSM"
+   "label": "GSM",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "section_break_sein",
@@ -208,16 +217,23 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fetch_from": "sales_order.customer",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-08 19:35:42.615729",
+ "modified": "2025-12-23 10:04:49.041741",
  "modified_by": "Administrator",
  "module": "Cover Up",
- "name": "Fabric Planning",
+ "name": "Yarn Planning",
  "owner": "maaz.hassan@sowaan.com",
  "permissions": [
   {
@@ -235,6 +251,7 @@
  ],
  "queue_in_background": 1,
  "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

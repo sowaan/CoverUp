@@ -8,9 +8,9 @@
   "section_break_ugr0",
   "amended_from",
   "fabric_planning_ref",
+  "customer",
   "grand_total",
   "waste_",
-  "sales_order",
   "knitted_items"
  ],
  "fields": [
@@ -31,39 +31,40 @@
   {
    "fieldname": "fabric_planning_ref",
    "fieldtype": "Link",
-   "label": "Fabric Planning Ref",
-   "options": "Fabric Planning"
+   "label": "Sales Order",
+   "options": "Sales Order"
   },
   {
    "fieldname": "grand_total",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Grand Total"
   },
   {
    "fieldname": "waste_",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Waste %"
-  },
-  
-
-  {
-   "fieldname": "sales_order",
-   "fieldtype": "Link",
-   "label": "Sales Order",
-   "options": "Sales Order"
   },
   {
    "fieldname": "knitted_items",
    "fieldtype": "Table",
    "label": "Knitted Items",
    "options": "Knitted Planning Item"
+  },
+  {
+   "fetch_from": "fabric_planning_ref.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-02 21:13:47.712987",
+ "modified": "2025-12-24 12:18:16.455056",
  "modified_by": "Administrator",
  "module": "Cover Up",
  "name": "Knitted Planning",

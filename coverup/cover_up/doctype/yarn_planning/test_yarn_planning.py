@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFabricPlanning(FrappeTestCase):
+class TestYarnPlanning(FrappeTestCase):
 	pass
