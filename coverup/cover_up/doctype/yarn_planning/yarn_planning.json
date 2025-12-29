@@ -213,7 +213,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Fabric Planning",
+   "options": "Yarn Planning",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -230,7 +230,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-23 10:04:49.041741",
+ "modified": "2025-12-29 14:43:59.337066",
  "modified_by": "Administrator",
  "module": "Cover Up",
  "name": "Yarn Planning",
